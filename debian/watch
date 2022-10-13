@@ -1,0 +1,5 @@
+version=3
+opts=\
+dversionmangle=s/\+(debian|dfsg|ds|deb)(\.\d+)?$//,\
+filenamemangle=s/.*\/v?([\d\.-]+)\.tar\.gz/node-d3-zoom-$1.tar.gz/ \
+ https://github.com/d3/d3-zoom/tags .*/archive/v?([\d\.]+).tar.gz

@@ -1,0 +1,64 @@
+node-d3-zoom (1.8.3-2) unstable; urgency=medium
+
+  * Drop unused debian/webpack.config.js
+  * Use node-rollup-plugin-terser (now available in the archive)
+  * Bump Standards-Version to 4.5.1 (no changes needed)
+  * Enable nocheck build profile
+  * Use dh-sequence-nodejs auto install
+
+ -- Pirate Praveen <praveen@debian.org>  Wed, 16 Dec 2020 01:12:57 +0530
+
+node-d3-zoom (1.8.3-1) unstable; urgency=medium
+
+  * Team Upload
+
+  [ Debian Janitor ]
+  * Use secure copyright file specification URI.
+  * Bump debhelper from old 11 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+  * Update standards version to 4.4.1, no changes needed.
+
+  [ Abraham Raji ]
+  * New upstream version 1.8.3
+  * changed all /usr/lib to /usr/share in debian/install
+
+ -- Abraham Raji <avronr@tuta.io>  Fri, 13 Mar 2020 17:13:19 +0000
+
+node-d3-zoom (1.7.3-3) unstable; urgency=medium
+
+  * Reupload to unstable
+  * Bump Standards-Version to 4.4.0 (no changes needed)
+
+ -- Pirate Praveen <praveen@debian.org>  Wed, 10 Jul 2019 17:20:38 +0530
+
+node-d3-zoom (1.7.3-2) experimental; urgency=medium
+
+  * Install ES module (src directory)
+  * Make build reproducible (Thanks to Chris Lamb)
+
+ -- Pirate Praveen <praveen@debian.org>  Sat, 22 Jun 2019 14:20:19 +0530
+
+node-d3-zoom (1.7.3-1) experimental; urgency=medium
+
+  * New upstream version 1.7.3
+  * Bump debhelper compatibility level to 11
+  * Bump Standards-Version to 4.3.0 (no changes needed)
+  * Use salsa.debian.org in Vcs-* fields
+  * Switch to rollup for build (rollup is in main now)
+  * Switch to pkg-js-tools for tests
+
+ -- Pirate Praveen <praveen@debian.org>  Mon, 17 Jun 2019 22:56:36 +0530
+
+node-d3-zoom (1.6.0-2) unstable; urgency=medium
+
+  * Use webpack to build umd module like upstream
+
+ -- Pirate Praveen <praveen@debian.org>  Sun, 07 Jan 2018 13:50:49 +0530
+
+node-d3-zoom (1.6.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #878002)
+
+ -- Pirate Praveen <praveen@debian.org>  Sun, 08 Oct 2017 20:08:57 +0530
