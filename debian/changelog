@@ -1,3 +1,42 @@
+node-d3-zoom (1.8.3+~1.8.4-1) unstable; urgency=medium
+
+  * Team upload
+  * Update standards version to 4.6.2, no changes needed
+  * Embed typescript declarations and repack
+
+ -- Yadd <yadd@debian.org>  Sat, 09 Sep 2023 19:26:49 +0400
+
+node-d3-zoom (1.8.3-4) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Update standards version to 4.6.1, no changes needed.
+
+  [ Yadd ]
+  * Add "Rules-Requires-Root: no"
+  * Add debian/gbp.conf
+  * Modernize debian/watch
+  * Fix filenamemangle
+  * Fix GitHub tags regex
+  * Add fix for rollup 3 (Closes: #1022620)
+
+ -- Yadd <yadd@debian.org>  Wed, 26 Oct 2022 12:15:20 +0200
+
+node-d3-zoom (1.8.3-3) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Remove constraints unnecessary since buster
+  * Bump debhelper from old 12 to 13.
+  * Update standards version to 4.6.0, no changes needed.
+
+  [ Paul Gevers ]
+  * Drop dependency on nodejs
+
+ -- Paul Gevers <elbrus@debian.org>  Thu, 07 Jul 2022 22:08:42 +0200
+
 node-d3-zoom (1.8.3-2) unstable; urgency=medium
 
   * Drop unused debian/webpack.config.js
