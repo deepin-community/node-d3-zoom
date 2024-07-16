@@ -3,34 +3,32 @@ Section: javascript
 Priority: optional
 Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
 Uploaders: Pirate Praveen <praveen@debian.org>
-Build-Depends:
- debhelper-compat (= 12)
+Build-Depends: debhelper-compat (= 13)
  , dh-sequence-nodejs
- , nodejs
- , rollup
+ , node-d3-dispatch
+ , node-d3-drag
+ , node-d3-interpolate
+ , node-d3-selection
+ , node-d3-transition
  , node-rollup-plugin-terser
  , node-tape <!nocheck>
- , node-d3-interpolate (>= 1)
- , node-d3-selection (>= 1)
- , node-d3-transition (>= 1)
- , node-d3-dispatch (>= 1)
- , node-d3-drag (>= 1)
-Standards-Version: 4.5.1
-Homepage: https://d3js.org/d3-zoom/
-Vcs-Git: https://salsa.debian.org/js-team/node-d3-zoom.git
+ , rollup
+Standards-Version: 4.6.2
 Vcs-Browser: https://salsa.debian.org/js-team/node-d3-zoom
+Vcs-Git: https://salsa.debian.org/js-team/node-d3-zoom.git
+Homepage: https://d3js.org/d3-zoom/
 Testsuite: autopkgtest-pkg-nodejs
+Rules-Requires-Root: no
 
 Package: node-d3-zoom
 Architecture: all
-Depends:
- ${misc:Depends}
- , nodejs
- , node-d3-interpolate (>= 1)
- , node-d3-selection (>= 1)
- , node-d3-transition (>= 1)
- , node-d3-dispatch (>= 1)
- , node-d3-drag (>= 1)
+Depends: node-d3-dispatch
+ , node-d3-drag
+ , node-d3-interpolate
+ , node-d3-selection
+ , node-d3-transition
+ , ${misc:Depends}
+Provides: ${nodejs:Provides}
 Description: Pan and zoom SVG, HTML or Canvas using mouse or touch input
  Panning and zooming are popular interaction techniques which let the user
  focus on a region of interest by restricting the view.

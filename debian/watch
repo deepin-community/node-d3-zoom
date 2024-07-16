@@ -1,5 +1,8 @@
-version=3
+version=4
 opts=\
-dversionmangle=s/\+(debian|dfsg|ds|deb)(\.\d+)?$//,\
-filenamemangle=s/.*\/v?([\d\.-]+)\.tar\.gz/node-d3-zoom-$1.tar.gz/ \
- https://github.com/d3/d3-zoom/tags .*/archive/v?([\d\.]+).tar.gz
+dversionmangle=auto,\
+filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-d3-zoom-$1/ \
+ https://github.com/d3/d3-zoom/tags .*/archive/.*/v?([\d\.]+).tar.gz group
+
+opts="searchmode=plain,component=types-d3-zoom,ctype=nodejs,pgpmode=none,filenamemangle=s/^.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-types-d3-zoom-$1/" \
+ https://registry.npmjs.org/@types/d3-zoom https://registry.npmjs.org/@types/d3-zoom/-/d3-zoom-([\d\.]+)@ARCHIVE_EXT@ group
